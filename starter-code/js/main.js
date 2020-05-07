@@ -26,13 +26,13 @@ playArea.addEventListener('click', function() {
 })
 
 resetBtn.addEventListener('click', function() {
-    buttonDiv.setAttribute("class", "");
+    difficultyButtonsDiv.setAttribute("class", "");
     resetDiv.setAttribute("class", "hidden");
 })
 
 difficultyButtonsDiv.addEventListener('click', function(evt) {
     if (evt.target.innerText) {
-        buttonDiv.setAttribute("class", "hidden");
+        difficultyButtonsDiv.setAttribute("class", "hidden");
         resetDiv.setAttribute("class", "");
     }
 })
